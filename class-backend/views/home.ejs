@@ -1,2 +1,12 @@
 <h1>Welcome to GLA</h1>
 <h2>CSE Department</h2>
+<ol>
+    <% data.students.forEach(student=>{%>
+    <li>
+        <%=<student.name%>
+    </li>
+   <%})%>
+</ol>
+<%- include("header",header)%>
+<%- include("content", content)%>
+<%- include("footer", footer)%>
