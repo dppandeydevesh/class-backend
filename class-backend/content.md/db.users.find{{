@@ -1,0 +1,6 @@
+db.users.find({
+  $or: [
+    { isActive: false },
+    { skills: { $in: ["Python"] } }
+  ]
+});
